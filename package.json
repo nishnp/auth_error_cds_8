@@ -1,0 +1,35 @@
+{
+  "name": "my-cap-app",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "7.9.4",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@cap-js/cds-types": "^0.6"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+    "auth": {
+      "kind": "basic-auth",
+      "users": {
+        "bob": {
+          "password": "",
+          "roles": [
+            "PROCESS_ALL",
+            "PROCESS"
+          ]
+        }
+      }
+    }
+  }
+  }
+}

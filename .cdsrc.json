@@ -1,0 +1,16 @@
+{
+  "requires": {
+    "auth": {
+      "kind": "basic-auth",
+      "users": {
+        "bob": {
+          "password": "",
+          "roles": [
+            "PROCESS_ALL",
+            "PROCESS"
+          ]
+        }
+      }
+    }
+  }
+}
